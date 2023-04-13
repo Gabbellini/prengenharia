@@ -1,5 +1,15 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="about-view">
+    <MainHeader></MainHeader>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import MainHeader from "@/components/MainHeader.vue";
+
+export default defineComponent({
+  name: 'AboutView',
+  components: {MainHeader},
+});
+</script>
