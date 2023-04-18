@@ -1,9 +1,11 @@
 <template>
   <header class="main-header">
     <div class="container">
-      <img src="../assets/static/logo.png" alt="Logo da PR engenharia.">
-      <button type="button"><span/></button>
-      <nav>
+      <router-link :to="{name: 'about'}">
+        <img src="../assets/static/logo.png" alt="Logo da PR engenharia.">
+      </router-link>
+      <button :class="isMenuOpen ? 'open' : 'close'" type="button" @click="toggleMenu"/>
+      <nav :class="isMenuOpen ? 'open' : 'close'">
         <ul>
           <li class="nav__item">
             <router-link :to="{name: 'about'}">Sobre</router-link>
@@ -11,19 +13,34 @@
         </ul>
       </nav>
       <ul class="icon-list">
-        <li class="icon-list__item icon-list__item--pinterest"><a href="#"></a></li>
-        <li class="icon-list__item icon-list__item--instagram"><a href="#"></a></li>
-        <li class="icon-list__item icon-list__item--facebook"><a href="#"></a></li>
+        <li class="icon-list__item icon-list__item--instagram">
+          <a href="https://www.instagram.com/prengenhaaria/" target="_blank"></a>
+        </li>
+        <li class="icon-list__item icon-list__item--facebook">
+          <a href="https://www.facebook.com/prengenhariaa/" target="_blank"></a>
+        </li>
       </ul>
     </div>
   </header>
 </template>
 
 <script lang="ts">
-import {defineComponent} from "vue";
+import {defineComponent, ref} from "vue";
 
 export default defineComponent({
   name: "MainHeader",
+
+  setup() {
+    const isMenuOpen = ref(false);
+    const toggleMenu = () => {
+      isMenuOpen.value = !isMenuOpen.value
+    };
+
+    return {
+      isMenuOpen,
+      toggleMenu,
+    }
+  }
 });
 </script>
 
@@ -64,8 +81,8 @@ nav > ul {
 }
 
 .nav__item > a {
-  padding: 1rem;
   box-sizing: border-box;
+  padding: 1rem;
 
   font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem;
@@ -103,5 +120,115 @@ nav > ul {
 
 button {
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    position: relative;
+  }
+
+  button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    order: -1;
+
+    min-height: 1.375rem;
+    min-width:  1.375rem;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    border: none;
+    background: none;
+  }
+
+  button::before, button::after {
+    content: "";
+    display: inline-block;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: black;
+    transition: 0.2s all ease-in-out;
+  }
+
+  button.open::after {
+    transform: translateY(-0.4rem) rotate(45deg);
+  }
+
+  button.open::before {
+    transform: translateY(0.2rem) rotate(-45deg);
+  }
+
+  nav {
+    position: absolute;
+
+    width: 100%;
+    height: 0;
+
+    bottom: 0;
+    left: 0;
+
+    transform: translateY(100%);
+    overflow: hidden;
+
+    background: #fafafa;
+  }
+
+  nav.open, nav.close {
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  nav.open {
+    animation-name: openMenu;
+  }
+
+  nav.close {
+    animation-name: closeMenu;
+  }
+
+  @keyframes openMenu {
+    from {
+      height: 0;
+    }
+    to {
+      height: 3rem;
+    }
+  }
+
+  @keyframes closeMenu {
+    from {
+      height: 3rem;
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  nav > ul {
+    justify-content: center;
+  }
+
+  .nav__item {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav__item > a {
+    flex: 1;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .icon-list {
+    display: none;
+  }
 }
 </style>
