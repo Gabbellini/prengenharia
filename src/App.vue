@@ -8,6 +8,10 @@
    License: none (public domain)
 */
 
+* {
+  transition: 0.5s ease-in-out;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,8 +56,10 @@ table {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
   width: 100%;
   padding: 0 2rem;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 </style>

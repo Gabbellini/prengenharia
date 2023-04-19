@@ -125,6 +125,7 @@ button {
 @media screen and (max-width: 1024px) {
   header {
     position: relative;
+    box-shadow: 0 5px 16px -3px rgba(142.5, 142.5, 142.5, 0.55);
   }
 
   button {
