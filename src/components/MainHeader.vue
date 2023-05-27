@@ -48,12 +48,14 @@ export default defineComponent({
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 header {
-  min-height: 95px;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
+  min-height: 95px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
   box-shadow: 0 0 17px -1px rgba(155.99999999999997, 155.99999999999997, 155.99999999999997, 0.18);
 }
 

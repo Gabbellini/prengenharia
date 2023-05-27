@@ -19,7 +19,7 @@ app.directive('scroll-animate', {
         } else {
             el.classList.remove(binding.value);
         }
-        el.addEventListener('scroll', () => {
+        window.addEventListener('scroll', () => {
             const elementTop = el.getBoundingClientRect().top;
             const viewportHeight = window.innerHeight;
             const elementVisible = elementTop < viewportHeight;
