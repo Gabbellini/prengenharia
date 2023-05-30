@@ -303,7 +303,41 @@
       </div>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__upper">
+        <div class="footer__logo">
+          <router-link :to="{name: 'about'}">
+            <img class="logo__image" src="../assets/static/logo.png" alt="Logo da PR engenharia.">
+          </router-link>
+        </div>
+        <div v-show="false" class="footer__nav">
+          <ul class="footer__links">
+            <li>
+              <router-link :to="{name: 'about'}">
+                <img class="logo__image" src="../assets/static/logo.png" alt="Logo da PR engenharia.">
+              </router-link>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__medias">
+            <h3>Mídias sociais</h3>
+            <ul class="icon-list">
+              <li class="icon-list__item icon-list__item--instagram">
+                <a href="https://www.instagram.com/prengenhaaria/" target="_blank"></a>
+              </li>
+              <li class="icon-list__item icon-list__item--facebook">
+                <a href="https://www.facebook.com/prengenhariaa/" target="_blank"></a>
+              </li>
+            </ul>
+        </div>
+      </div>
+      <div class="footer__lower">
+        <div class="footer__copyright">© 2023 PR ENGENHARIA | Created by 
+          <a href="https://personal-website-kohl-mu.vercel.app/" target="_blank">ABSTRATO.CO</a>
+        </div>
+        <router-link class="footer__privacy-policies" to="/policies">Política de privacidade</router-link>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -331,10 +365,58 @@ export default defineComponent({
 }
 
 .footer {
-  height: 400px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+
+.footer__upper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 310px;
   background-color: #282827;
   box-sizing: border-box;
-  padding: 4rem 1rem 5rem 1rem;
+  padding: 5rem;
+}
+
+.footer__lower {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  background-color: #1B1B1A;
+  padding: 0 4rem;
+}
+
+.footer__copyright {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 50%;
+  text-decoration: none;
+  color: #E6E4DE;
+  font-size: 14px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 500;
+}
+
+.footer__copyright > a {
+  text-decoration: none;
+  font-weight: 800;
+  color: #0170B9;
+}
+
+.footer__privacy-policies {
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  color: #E6E4DE;
+  font-size: 14px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 500;
 }
 
 .section.sponsors {
@@ -356,7 +438,7 @@ h2 > strong:last-child {
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   font-size: 3rem;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
   color: #3a3a3a;
   transition: 1s all ease-in-out;
 }
@@ -463,5 +545,52 @@ h2 > strong:last-child {
   .section__image > img {
     max-width: 400px;
   }
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer__medias {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E6E4DE;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  font-family: "Montserrat", Sans-serif;
+}
+
+.logo__image {
+  width: 20rem;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.icon-list__item > a:not(.icon-list__item--instagram > a) {
+  width: 30px;
+  height: 30px;
+}
+
+.icon-list__item--pinterest > a{
+  content: url("../assets/static/icons/social-medias/pinterest.svg");
+}
+
+.icon-list__item--instagram > a{
+  content: url("../assets/static/icons/social-medias/instagram.svg");
+}
+
+.icon-list__item--facebook > a {
+  content: url("../assets/static/icons/social-medias/facebook.svg");
 }
 </style>
