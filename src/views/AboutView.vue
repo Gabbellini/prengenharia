@@ -19,7 +19,7 @@
             qualidade na arquitetura e compromisso nas entregas.
           </p>
         </div>
-        <div class="section__image">
+        <div v-scroll-animate="'slide-from-right'" class="section__image">
           <img
             src="../assets/static/about/renato_pamela.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
@@ -30,7 +30,7 @@
 
     <section class="section">
       <div class="section__content">
-        <div class="section__image">
+        <div v-scroll-animate="'slide-from-left'" class="section__image">
           <img
             src="../assets/static/about/renato_pamela.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
@@ -58,7 +58,7 @@
 
     <section class="section">
       <div class="section__content">
-        <div class="section__image">
+        <div v-scroll-animate="'slide-from-left'" class="section__image">
           <img
             src="../assets/static/about/renato_pamela.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
@@ -106,7 +106,7 @@
             <li>PROJETO ARQUITETÔNICO</li>
           </ul>
         </div>
-        <div class="section__image">
+        <div v-scroll-animate="'slide-from-right'" class="section__image">
           <img
             src="../assets/static/about/renato_pamela.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
@@ -471,6 +471,36 @@ export default defineComponent({
   }
   to {
     opacity: 1;
+  }
+}
+
+.slide-from-left {
+  animation-name: slideFromLeft;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.slide-from-right {
+  animation-name: slideFromRight;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
   }
 }
 
