@@ -376,13 +376,12 @@ export default defineComponent({
 .section {
   width: 100%;
   box-sizing: border-box;
-  padding: 3rem;
+  padding: 1rem;
 }
 
 .section__content {
   display: flex;
   flex-direction: column;
-  width: 1180px;
   max-width: 1180px;
   gap: 2rem;
   margin: 0 auto;
@@ -400,7 +399,7 @@ export default defineComponent({
 }
 
 .section__image > img {
-  max-width: 600px;
+  max-width: 290px;
   border-radius: 30px;
 }
 
@@ -575,7 +574,8 @@ h2 > strong:last-child {
 .footer__lower {
   display: flex;
   justify-content: space-between;
-  height: 45px;
+  height: fit-content;
+  min-height: 45px;
   background-color: #1B1B1A;
   padding: 0 4rem;
 }
@@ -628,7 +628,7 @@ h2 > strong:last-child {
 }
 
 .logo__image {
-  width: 20rem;
+  width: 12rem;
 }
 
 .icon-list {
@@ -656,12 +656,22 @@ h2 > strong:last-child {
 }
 
 @media screen and (min-width: 768px) {
+  .section {
+    padding: 3rem;
+  }
+
   .section__content {
     flex-direction: row;
+    width: 1180px;
   }
 
   .section__image > img {
     width: 450px;
+    max-width: 600px;
+  }
+
+  .logo__image {
+    width: 20rem;
   }
 }
 </style>
