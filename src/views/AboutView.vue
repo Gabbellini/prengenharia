@@ -4,19 +4,25 @@
     <section class="section">
       <div class="section__content">
         <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="section-title">
+          <!-- <h2 class="section-title">
             Por trás da <br />
             <strong>PR ENGENHARIA</strong>, existem
             <strong>grandes profissionais</strong>
           </h2>
+          Construímos sonhos e transformamos ideias em realidade, com expertise, inovação e excelência em cada projeto. -->
+          <h2 class="section-title">
+            Construímos <br />
+            <strong>sonhos</strong> e transformamos ideias em
+            <strong>realidade</strong>, com expertise, inovação e excelência em cada projeto.
+          </h2>
           <p class="main-text">
-            A PR Engenharia é resultado da união de dois profissionais com
-            conhecimentos e experiências diferentes, que juntas somam forças para
-            concretizar os sonhos dos clientes.
+            Se você procura uma empresa de engenharia comprometida com a excelência, a PR Engenharia é a escolha certa.
           </p>
           <p class="main-text">
-            O escritório se destaca pelo alto padrão de projetos e atendimento,
-            qualidade na arquitetura e compromisso nas entregas.
+            Com uma equipe altamente qualificada, tecnologia de ponta e anos de experiência no mercado, a empresa oferece soluções completas e personalizadas para cada projeto, sempre com o compromisso de entregar o melhor resultado.
+          </p>
+          <p class="main-text">
+            Venha conhecer a PR Engenharia e descubra como podemos transformar seus sonhos em realidade!
           </p>
         </div>
         <div v-scroll-animate="'slide-from-right'" class="section__image">
@@ -37,48 +43,17 @@
           />
         </div>
         <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="section-title">Tudo começou quando...</h2>
+          <h2 class="section-title">RENATO DIAS GALLES</h2>
           <p class="main-text">
-            Maira e Fernanda se conheceram por amigos em comum na época da
-            faculdade. Com as idas e vindas da vida, em 2016 decidiram fundar a
-            Toddo.
+            A história da PR Engenharia é marcada pelo engenheiro civil Renato Dias Galles, um verdadeiro apaixonado pela construção civil. Desde o início de sua carreira, sempre se destacou por sua visão inovadora e seu comprometimento com a qualidade e a excelência em cada projeto.
           </p>
           <p class="main-text">
-            A ideia surgiu da vontade de entregar serviços completos, uma
-            arquitetura de ponta a ponta.
-          </p>
-          <p class="main-text">
-            Além disso, o foco da empresa é na particularidade de cada cliente,
-            buscando afinidades e conhecimento de seus desejos e expectativas
-            sobre o processo de criação, tornando cada projeto especial e único.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section__content">
-        <div v-scroll-animate="'slide-from-left'" class="section__image">
-          <img
-            src="../assets/static/about/renato_pamela.jpg"
-            alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
-          />
-        </div>
-        <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="section-title">MAIRA DOLZAN</h2>
-          <p class="main-text">
-            “Eu nasci apaixonada por arquitetura de interiores. Onde estou,
-            aonde vou, faz parte de mim, é o que faz meu olho brilhar!
-          </p>
-          <p class="main-text">
-            Sou detalhista, perfeccionista e exigente (um pouco chata, faz
-            parte! Rs). Gosto de ficar a par de toda a execução e fiscalizar os
-            mínimos detalhes, pois acredito que eles fazem a diferença.”
+            Com anos de experiência e conhecimento em todas as etapas da construção, desde o projeto até o gerenciamento da obra, a PR Engenharia oferece um serviço de excelência, sempre pautado na segurança e responsabilidade.
           </p>
           <ul class="competencies left">
-            <li>DESIGN</li>
-            <li>DECORAÇÃO</li>
-            <li>PROJETO DE INTERIORES</li>
+            <li>OBRAS</li>
+            <li>EXECUÇÃO</li>
+            <li>PROJETO ARQUITETÔNICO</li>
           </ul>
         </div>
       </div>
@@ -87,23 +62,17 @@
     <section class="section">
       <div class="section__content">
         <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="section-title">FERNANDA DE MORAES</h2>
+          <h2 class="section-title">PÂMELA GALLES</h2>
           <p class="main-text">
-            “Arquiteta com o pé na obra! Gosto de criar e desenvolver projetos,
-            mas vê-los tomar forma é a minha paixão. Esta é a minha proposta,
-            entregar mais do que o projeto!
+            Uma das grandes responsáveis pelo sucesso da PR Engenharia é a projetista Pamela Galles, que traz consigo anos de experiência e conhecimento em projetos de engenharia.
           </p>
           <p class="main-text">
-            Criar espaços e edificações vai além de desenhar e conferir medidas.
-            Se envolver com a trajetória é inevitável, passamos a fazer parte da
-            história dos nossos clientes. Desde “o antes”, na contratação da nossa
-            equipe, até “o depois”, quando o cliente já está usufruindo dos
-            espaços que criamos.”
+            Com sua criatividade e habilidade técnica, com um olhar apurado para os detalhes e uma habilidade única em transformar ideias em realidade, suas ideias inovadoras e seu compromisso com a qualidade têm sido a base para muitos projetos bem-sucedidos, o que resultou em um crescente número de clientes satisfeitos e um forte reconhecimento no mercado.
           </p>
           <ul class="competencies right">
-            <li>OBRAS</li>
-            <li>EXECUÇÃO</li>
-            <li>PROJETO ARQUITETÔNICO</li>
+            <li>DESIGN</li>
+            <li>DECORAÇÃO</li>
+            <li>PROJETO DE INTERIORES</li>
           </ul>
         </div>
         <div v-scroll-animate="'slide-from-right'" class="section__image">
@@ -331,7 +300,47 @@
             <ul class="footer__links">
               <li>
                 <router-link :to="{name: 'about'}">
-                  <img class="logo__image" src="../assets/static/logo.png" alt="Logo da PR engenharia.">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
+                </router-link>
+              </li>
+              <li>
+                <router-link :to="{name: 'about'}">
+                  Sobre
                 </router-link>
               </li>
             </ul>
@@ -504,7 +513,7 @@ export default defineComponent({
   }
 }
 
-h2 > strong:last-child {
+h2 > strong {
   font-weight: 600;
 }
 
@@ -642,6 +651,10 @@ h2 > strong:last-child {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer__links > li {
+  font-size: 16px;
 }
 
 .footer__medias {
