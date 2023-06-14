@@ -396,9 +396,10 @@ export default defineComponent({
 .section__content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: 1180px;
+  width: 100%;
   gap: 2rem;
-  margin: 0 auto;
   position: relative;
 }
 
@@ -621,7 +622,7 @@ h2 > strong {
   min-height: 310px;
   background-color: #282827;
   box-sizing: border-box;
-  padding: 5rem;
+  padding: 5rem 1rem;
 }
 
 .footer__content {
@@ -706,6 +707,7 @@ h2 > strong {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  white-space: nowrap;
   text-transform: uppercase;
   text-decoration: none;
   color: #E6E4DE;
@@ -798,6 +800,10 @@ h2 > strong {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .footer__upper {
+    padding: 5rem;
   }
 }
 </style>
