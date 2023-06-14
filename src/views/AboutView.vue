@@ -35,12 +35,17 @@
     </section>
 
     <section class="section">
-      <div class="section__content">
+      <div class="section__content renato">
         <div v-scroll-animate="'slide-from-left'" class="section__image">
           <img
-            src="../assets/static/about/renato_pamela.jpg"
+            src="../assets/static/about/renato.jpeg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
           />
+          <ul class="competencies">
+            <li>OBRAS</li>
+            <li>EXECUÇÃO</li>
+            <li>PROJETO ARQUITETÔNICO</li>
+          </ul>
         </div>
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="section-title">RENATO DIAS GALLES</h2>
@@ -50,17 +55,12 @@
           <p class="main-text">
             Com anos de experiência e conhecimento em todas as etapas da construção, desde o projeto até o gerenciamento da obra, a PR Engenharia oferece um serviço de excelência, sempre pautado na segurança e responsabilidade.
           </p>
-          <ul class="competencies left">
-            <li>OBRAS</li>
-            <li>EXECUÇÃO</li>
-            <li>PROJETO ARQUITETÔNICO</li>
-          </ul>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="section__content">
+      <div class="section__content pamela">
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="section-title">PÂMELA GALLES</h2>
           <p class="main-text">
@@ -69,17 +69,17 @@
           <p class="main-text">
             Com sua criatividade e habilidade técnica, com um olhar apurado para os detalhes e uma habilidade única em transformar ideias em realidade, suas ideias inovadoras e seu compromisso com a qualidade têm sido a base para muitos projetos bem-sucedidos, o que resultou em um crescente número de clientes satisfeitos e um forte reconhecimento no mercado.
           </p>
-          <ul class="competencies right">
+        </div>
+        <div v-scroll-animate="'slide-from-right'" class="section__image">
+          <img
+            src="../assets/static/about/pamela.jpeg"
+            alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
+          />
+          <ul class="competencies">
             <li>DESIGN</li>
             <li>DECORAÇÃO</li>
             <li>PROJETO DE INTERIORES</li>
           </ul>
-        </div>
-        <div v-scroll-animate="'slide-from-right'" class="section__image">
-          <img
-            src="../assets/static/about/renato_pamela.jpg"
-            alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
-          />
         </div>
       </div>
     </section>
@@ -386,6 +386,7 @@ export default defineComponent({
   width: 100%;
   box-sizing: border-box;
   padding: 1rem;
+  margin-bottom: 60px;
 }
 
 .section__content {
@@ -394,38 +395,11 @@ export default defineComponent({
   max-width: 1180px;
   gap: 2rem;
   margin: 0 auto;
+  position: relative;
 }
 
-.section.sponsors {
-  height: 250px;
-  background-color: #d6d6d6;
-}
-
-.section__text {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.section__image > img {
-  max-width: 290px;
-  border-radius: 30px;
-}
-
-.main-text {
-  color: #7a7a7a;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-
-.dark-text {
-  color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+.section__content.renato {
+  flex-direction: column-reverse;
 }
 
 .competencies {
@@ -433,19 +407,22 @@ export default defineComponent({
   flex-direction: column;
   align-items: flex-end;
   gap: 0.5rem;
+  font-weight: 500;
+  margin-top: 5rem;
 }
 
-.competencies.left {
+.section__content.renato .competencies {
+  position: absolute;
+  left: 0;
+  bottom: -50px;
   align-items: flex-start;
 }
 
-.competencies.right {
+.section__content.pamela .competencies {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
   align-items: flex-end;
-}
-
-.competencies {
-  font-weight: 500;
-  margin-top: 5rem;
 }
 
 .competencies > li {
@@ -465,6 +442,42 @@ export default defineComponent({
 
 .competencies > li:nth-child(3) {
   font-weight: lighter;
+}
+
+.section.sponsors {
+  height: 250px;
+  background-color: #d6d6d6;
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section__image {
+  text-align: end;
+}
+
+.section__image > img {
+  max-width: 340px;
+  border-radius: 30px;
+}
+
+.main-text {
+  color: #7a7a7a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.dark-text {
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 .fade-in {
@@ -520,8 +533,8 @@ h2 > strong {
 .section-title {
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
-  font-size: 3rem;
-  line-height: 3.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
   color: #3a3a3a;
   transition: 1s all ease-in-out;
 }
@@ -703,9 +716,27 @@ h2 > strong {
     padding: 3rem;
   }
 
-  .section__content {
+  .section__content, .section__content.renato {
     flex-direction: row;
     width: 1180px;
+  }
+
+  .section__content.renato .competencies {
+    left: initial;
+    right: -290px;
+    bottom: 100px;
+    align-items: flex-start;
+  }
+
+  .section__content.pamela .competencies {
+    left: -270px;
+    right: initial;
+    bottom: 100px;
+    align-items: flex-end;
+  }
+
+  .section__image {
+    text-align: initial;
   }
 
   .section__image > img {
@@ -715,6 +746,11 @@ h2 > strong {
 
   .logo__image {
     width: 20rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 }
 </style>
