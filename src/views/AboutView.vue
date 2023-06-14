@@ -296,49 +296,49 @@
               <img class="logo__image" src="../assets/static/logo.png" alt="Logo da PR engenharia.">
             </router-link>
           </div>
-          <div v-show="false" class="footer__nav">
+          <div v-show="true" class="footer__nav">
             <ul class="footer__links">
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Home
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Serviços
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Contato 
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Mostras
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Orçamento
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Projetos
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Mídia
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
-                  Sobre
+                  Blog
                 </router-link>
               </li>
-              <li>
+              <li class="footer__link">
                 <router-link :to="{name: 'about'}">
                   Sobre
                 </router-link>
@@ -618,7 +618,7 @@ h2 > strong {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 310px;
+  min-height: 310px;
   background-color: #282827;
   box-sizing: border-box;
   padding: 5rem;
@@ -665,14 +665,41 @@ h2 > strong {
   font-weight: 500;
 }
 
-.footer__links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+.footer__nav {
+  width: 100%;
 }
 
-.footer__links > li {
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer__link {
+  display: grid;
+  place-items: center;
   font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  transition: .3s;
+}
+
+
+.footer__link:hover {
+  background-color: #3a3f45;
+  color: #C6BBA6;
+}
+
+.footer__link > a {
+  text-decoration: inherit;
+  color: inherit;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .footer__medias {
@@ -765,6 +792,12 @@ h2 > strong {
   .footer__lower {
     flex-direction: row;
     padding: 0 4rem;
-  } 
+  }
+
+  .footer__links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 </style>
