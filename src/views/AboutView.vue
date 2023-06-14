@@ -396,7 +396,6 @@ export default defineComponent({
 .section__content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 1180px;
   width: 100%;
   gap: 2rem;
@@ -627,6 +626,7 @@ h2 > strong {
 
 .footer__content {
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer__lower {
