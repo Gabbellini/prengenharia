@@ -630,11 +630,11 @@ h2 > strong {
 
 .footer__lower {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   height: fit-content;
   min-height: 45px;
   background-color: #1B1B1A;
-  padding: 0 4rem;
 }
 
 .footer__copyright {
@@ -695,7 +695,7 @@ h2 > strong {
 .icon-list {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -757,5 +757,14 @@ h2 > strong {
     font-size: 3rem;
     line-height: 3.5rem;
   }
+
+  .icon-list {
+    justify-content: flex-end;
+  }
+
+  .footer__lower {
+    flex-direction: row;
+    padding: 0 4rem;
+  } 
 }
 </style>
