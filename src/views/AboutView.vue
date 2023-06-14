@@ -766,16 +766,14 @@ h2 > strong {
   
   .section__content.renato .competencies {
     left: initial;
-    right: -290px;
-    bottom: 100px;
-    align-items: flex-start;
+    right: 20px;
+    bottom: -50px;
   }
-  
+
   .section__content.pamela .competencies {
-    left: -270px;
+    left: 20px;
     right: initial;
-    bottom: 100px;
-    align-items: flex-end;
+    bottom: -50px;
   }
   
   .section__image {
@@ -822,6 +820,20 @@ h2 > strong {
   .section__image > img {
     width: 450px;
     max-width: 600px;
+  }
+
+  .section__content.renato .competencies {
+    left: initial;
+    right: -290px;
+    bottom: 100px;
+    align-items: flex-start;
+  }
+  
+  .section__content.pamela .competencies {
+    left: -270px;
+    right: initial;
+    bottom: 100px;
+    align-items: flex-end;
   }
 }
 
