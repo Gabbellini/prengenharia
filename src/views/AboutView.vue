@@ -687,8 +687,8 @@ h2 > strong {
   text-decoration: none;
   color: #fff;
   transition: .3s;
+  border-bottom: 0.2rem solid transparent;
 }
-
 
 .footer__link:hover {
   background-color: #3a3f45;
@@ -745,65 +745,84 @@ h2 > strong {
   content: url("../assets/static/icons/social-medias/facebook-white.png");
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
+    .section-title {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
   .section {
     padding: 3rem;
+    display: flex;
+    justify-content: center;
   }
-
+  
   .section__content, .section__content.renato {
     flex-direction: row;
     width: 1180px;
   }
-
+  
   .section__content.renato .competencies {
     left: initial;
     right: -290px;
     bottom: 100px;
     align-items: flex-start;
   }
-
+  
   .section__content.pamela .competencies {
     left: -270px;
     right: initial;
     bottom: 100px;
     align-items: flex-end;
   }
-
+  
   .section__image {
     text-align: initial;
   }
 
   .section__image > img {
-    width: 450px;
+    width: 310px;
     max-width: 600px;
   }
-
+  
   .logo__image {
     width: 20rem;
   }
-
-  .section-title {
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-
+  
   .icon-list {
     justify-content: flex-end;
   }
 
+  .footer__upper {
+    padding: 5rem;
+    justify-content: center;
+  }
+  
   .footer__lower {
     flex-direction: row;
     padding: 0 4rem;
   }
-
+  
   .footer__links {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
   }
-
-  .footer__upper {
-    padding: 5rem;
+  
+  .footer__link:hover {
+    background-color: transparent;
+    border-bottom: 0.2rem solid #fff;
+    color: #fff;
   }
 }
+
+@media screen and (min-width: 1300px) {
+  .section__image > img {
+    width: 450px;
+    max-width: 600px;
+  }
+}
+
 </style>
