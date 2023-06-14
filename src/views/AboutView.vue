@@ -359,10 +359,10 @@
         </div>
       </div>
       <div class="footer__lower">
-        <div class="footer__copyright">© 2023 PR ENGENHARIA | Created by 
-          <a href="https://personal-website-kohl-mu.vercel.app/" target="_blank">ABSTRATO.CO</a>
+        <div class="footer__copyright">© 2023 PR ENGENHARIA <span v-show="false">| Created by</span> 
+          <a v-show="false" href="https://personal-website-kohl-mu.vercel.app/" target="_blank">ABSTRATO.CO</a>
         </div>
-        <router-link class="footer__privacy-policies" to="/policies">Política de privacidade</router-link>
+        <router-link class="footer__privacy-policies" to="/policies">política de privacidade</router-link>
       </div>
     </footer>
   </div>
@@ -381,6 +381,10 @@ export default defineComponent({
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+
+.about-view {
+  overflow: hidden;
+}
 
 .section {
   width: 100%;
@@ -460,7 +464,8 @@ export default defineComponent({
 }
 
 .section__image > img {
-  max-width: 340px;
+  /* max-width: 340px; */
+  width: 100%;
   border-radius: 30px;
 }
 
