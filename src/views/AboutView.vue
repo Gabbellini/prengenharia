@@ -1,4 +1,8 @@
 <template>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=554797342592&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="whatsapp-float-button" target="_blank">
+    <i class="fa fa-whatsapp whatsapp-icon"></i>
+  </a>
   <div class="about-view">
     <MainHeader />
     <section class="section">
@@ -30,6 +34,45 @@
             src="../assets/static/about/renato_pamela.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
           />
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__content">
+        <div v-scroll-animate="'slide-from-left'" class="section__image">
+          <img
+            src="../assets/static/about/renato_pamela.jpg"
+            alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
+          />
+        </div>
+        <div v-scroll-animate="'fade-in'" class="section__text">
+          <h2 class="section-title">TUDO COMEÇOU QUANDO...</h2>
+          <p class="main-text">
+            Maira e Fernanda se conheceram por amigos em comum na época da faculdade. Com as idas e vindas da vida, em 2016 decidiram fundar a Toddo.
+          </p>
+          <p class="main-text">
+            A ideia surgiu da vontade de entregar serviços completos, uma arquitetura ponta a ponta.
+          </p>
+          <p class="main-text">
+            Além disso, o foco da empresa é na particularidade de cada cliente, buscando afinidades e conhecimento de seus desejos e expectativas sobre o processo de criação, tornando cada projeto especial e único.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__content quote">
+        <div v-scroll-animate="'slide-from-left'" class="section__image">
+          <img
+            src="../assets/static/about/renato_pamela.jpg"
+            alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
+          />
+        </div>
+        <div v-scroll-animate="'fade-in'" class="section__text">
+          <p class="dark-text">
+            "O amor e a dedicação que temos em nosso trabalho refletem no retorno e na satisfação dos nossos clientes, o que nos faz acreditar que estamos no caminho certo."
+          </p>
         </div>
       </div>
     </section>
@@ -402,6 +445,10 @@ export default defineComponent({
   position: relative;
 }
 
+.section__content.quote {
+  align-items: flex-end;
+}
+
 .section__content.renato {
   flex-direction: column-reverse;
 }
@@ -743,6 +790,25 @@ h2 > strong {
 
 .icon-list__item--facebook > a {
   content: url("../assets/static/icons/social-medias/facebook-white.png");
+}
+
+.whatsapp-float-button {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:20px;
+	right:20px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.whatsapp-icon {
+	margin-top: 16px;
 }
 
 @media screen and (min-width: 800px) {
