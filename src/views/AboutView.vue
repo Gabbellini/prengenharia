@@ -7,25 +7,29 @@
     <MainHeader />
     <section class="section">
       <div class="section__content">
-        <div v-scroll-animate="'fade-in'" class="section__text">
-          <!-- <h2 class="section-title">
-            Por trás da <br />
-            <strong>PR ENGENHARIA</strong>, existem
-            <strong>grandes profissionais</strong>
-          </h2>
-          Construímos sonhos e transformamos ideias em realidade, com expertise, inovação e excelência em cada projeto. -->
-          <h2 class="section-title">
+        <div class="section__text">
+          <div class="section-title-container">
+            <h2 v-scroll-animate="'fade-in-1s'" class="section-title">Por trás da</h2>
+            <h2 v-scroll-animate="'fade-in-2s'" class="section-title">
+              PR ENGENHARIA, existem
+            </h2>
+            <h2 v-scroll-animate="'fade-in-3s'" class="section-title">
+              <strong>grandes profissionais</strong>
+            </h2>
+          </div>
+           
+          <h2 v-show="false" class="section-title">
             Construímos <br />
             <strong>sonhos</strong> e transformamos ideias em
             <strong>realidade</strong>, com expertise, inovação e excelência em cada projeto.
           </h2>
-          <p class="main-text">
+          <p v-scroll-animate="'fade-in'" class="main-text">
             Se você procura uma empresa de engenharia comprometida com a excelência, a PR Engenharia é a escolha certa.
           </p>
-          <p class="main-text">
+          <p v-scroll-animate="'fade-in'" class="main-text">
             Com uma equipe altamente qualificada, tecnologia de ponta e anos de experiência no mercado, a empresa oferece soluções completas e personalizadas para cada projeto, sempre com o compromisso de entregar o melhor resultado.
           </p>
-          <p class="main-text">
+          <p v-scroll-animate="'fade-in'" class="main-text">
             Venha conhecer a PR Engenharia e descubra como podemos transformar seus sonhos em realidade!
           </p>
         </div>
@@ -85,9 +89,9 @@
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
           />
           <ul class="competencies">
-            <li>OBRAS</li>
-            <li>EXECUÇÃO</li>
-            <li>PROJETO ARQUITETÔNICO</li>
+            <li v-scroll-animate="'slide-from-right'">OBRAS</li>
+            <li v-scroll-animate="'slide-from-right'">EXECUÇÃO</li>
+            <li v-scroll-animate="'slide-from-right'">PROJETO ARQUITETÔNICO</li>
           </ul>
         </div>
         <div v-scroll-animate="'fade-in'" class="section__text">
@@ -119,9 +123,9 @@
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
           />
           <ul class="competencies">
-            <li>DESIGN</li>
-            <li>DECORAÇÃO</li>
-            <li>PROJETO DE INTERIORES</li>
+            <li v-scroll-animate="'slide-from-left'">DESIGN</li>
+            <li v-scroll-animate="'slide-from-left'">DECORAÇÃO</li>
+            <li v-scroll-animate="'slide-from-left'">PROJETO DE INTERIORES</li>
           </ul>
         </div>
       </div>
@@ -538,10 +542,30 @@ export default defineComponent({
   animation-duration: 0.8s;
 }
 
+.fade-in-1s {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+}
+
+.fade-in-2s {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+}
+
+.fade-in-3s {
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateX(-50px);
+    /* transform: translateX(-50px); */
   }
   to {
     opacity: 1;
@@ -582,6 +606,12 @@ h2 > strong {
   font-weight: 600;
 }
 
+.section-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
 .section-title {
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
@@ -589,6 +619,7 @@ h2 > strong {
   line-height: 3rem;
   color: #3a3a3a;
   transition: 1s all ease-in-out;
+  opacity: 0;
 }
 
 .contact-title {
