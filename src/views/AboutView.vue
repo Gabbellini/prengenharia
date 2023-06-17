@@ -1,6 +1,6 @@
 <template>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=5547996802952&text=Olá%21%20gostaria%20de%20ajuda." class="whatsapp-float-button" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5547984822911&text=Olá%21%20gostaria%20de%20ajuda." class="whatsapp-float-button" target="_blank">
     <i class="fa fa-whatsapp whatsapp-icon"></i>
   </a>
   <div class="about-view">
@@ -149,8 +149,8 @@
           </p>
           <div class="contact telephone">
             <h3 class="subtitle">Telefones</h3>
-            <a class="link" href="tel:5547996802952">+55 47 99680-2952</a>
-            <a class="link" href="tel:5547996802952">+55 47 99680-2952</a>
+            <a class="link" href="tel:5547984822911">+55 47 8482-2911</a>
+            <a class="link" href="tel:5547984392757">+55 47 98439-2757</a>
           </div>
           <div class="contact email">
             <h3 class="subtitle">E-mail</h3>
