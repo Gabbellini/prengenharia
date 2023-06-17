@@ -91,7 +91,7 @@
       <div class="section__content quote">
         <div v-scroll-animate="'slide-from-left'" class="section__image section__image--project">
           <img
-            src="../assets/static/about/project.png"
+            src="../assets/static/about/project.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
           />
         </div>
@@ -149,12 +149,12 @@
           </p>
           <div class="contact telephone">
             <h3 class="subtitle">Telefones</h3>
-            <a class="link" href="tel:5547996802952">+55 48 98833-7474</a>
-            <a class="link" href="tel:5547996802952">+55 48 99618-9628</a>
+            <a class="link" href="tel:5547996802952">+55 47 99680-2952</a>
+            <a class="link" href="tel:5547996802952">+55 47 99680-2952</a>
           </div>
           <div class="contact email">
             <h3 class="subtitle">E-mail</h3>
-            <a class="link" href="mailto:prengenharia@outlook.com.br">contato@toddo.arq.br</a>
+            <a class="link" href="mailto:prengenharia@outlook.com.br">prengenharia@outlook.com.br</a>
           </div>
           <div class="contact location">
             <h3 class="subtitle">Endereço</h3>
@@ -284,7 +284,7 @@ export default defineComponent({
 }
 
 .section__content.quote {
-  align-items: flex-end;
+  align-items: center;
 }
 
 .section__content.renato {
@@ -355,7 +355,7 @@ export default defineComponent({
 }
 
 .main-text {
-  color: #7a7a7a;
+  color: #525252;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
