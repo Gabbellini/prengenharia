@@ -139,10 +139,26 @@
             Nossa missão é proporcionar soluções de engenharia de alta qualidade e inovadoras para nossos clientes, garantindo a segurança e a eficiência dos projetos. Nós buscamos sempre superar as expectativas dos nossos clientes e contribuir para o desenvolvimento sustentável da sociedade. Nossa equipe de profissionais altamente capacitados e dedicados trabalha em estreita colaboração com nossos clientes para garantir que cada projeto seja entregue no prazo.
           </p>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__content missao">
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="section-title">NOSSA VISÃO</h2>
           <p class="main-text">
             A nossa visão é ser uma empresa líder em engenharia civil, reconhecida pela excelência em projetos inovadores e construções. Buscamos constantemente aprimorar nossos conhecimentos e técnicas para atender às necessidades de nossos clientes de forma eficiente e eficaz que atendam às necessidades do mercado e contribuam para o desenvolvimento da sociedade. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__content missao">
+        <div v-scroll-animate="'fade-in'" class="section__text">
+          <h2 class="section-title">NOSSOS VALORES</h2>
+          <p class="main-text">
+            Comprometimento, Transparência, Ética, Honestidade, Agilidade.
           </p>
         </div>
       </div>
