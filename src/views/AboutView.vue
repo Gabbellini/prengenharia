@@ -9,11 +9,11 @@
       <div class="section__content">
         <div class="section__text">
           <div class="section-title-container">
-            <h2 v-scroll-animate="'fade-in-1s'" class="section-title">Por trás da</h2>
-            <h2 v-scroll-animate="'fade-in-2s'" class="section-title">
+            <h2 v-scroll-animate="'fade-in-1s'" class="main-title">Por trás da</h2>
+            <h2 v-scroll-animate="'fade-in-2s'" class="main-title">
               PR ENGENHARIA, existem
             </h2>
-            <h2 v-scroll-animate="'fade-in-3s'" class="section-title">
+            <h2 v-scroll-animate="'fade-in-3s'" class="main-title">
               <strong>grandes profissionais</strong>
             </h2>
           </div>
@@ -127,6 +127,23 @@
             <li v-scroll-animate="'slide-from-left'">DECORAÇÃO</li>
             <li v-scroll-animate="'slide-from-left'">PROJETO DE INTERIORES</li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section__content missao">
+        <div v-scroll-animate="'fade-in'" class="section__text">
+          <h2 class="section-title">NOSSA MISSÃO</h2>
+          <p class="main-text">
+            Nossa missão é proporcionar soluções de engenharia de alta qualidade e inovadoras para nossos clientes, garantindo a segurança e a eficiência dos projetos. Nós buscamos sempre superar as expectativas dos nossos clientes e contribuir para o desenvolvimento sustentável da sociedade. Nossa equipe de profissionais altamente capacitados e dedicados trabalha em estreita colaboração com nossos clientes para garantir que cada projeto seja entregue no prazo.
+          </p>
+        </div>
+        <div v-scroll-animate="'fade-in'" class="section__text">
+          <h2 class="section-title">NOSSA VISÃO</h2>
+          <p class="main-text">
+            A nossa visão é ser uma empresa líder em engenharia civil, reconhecida pela excelência em projetos inovadores e construções. Buscamos constantemente aprimorar nossos conhecimentos e técnicas para atender às necessidades de nossos clientes de forma eficiente e eficaz que atendam às necessidades do mercado e contribuam para o desenvolvimento da sociedade. 
+          </p>
         </div>
       </div>
     </section>
@@ -612,7 +629,7 @@ h2 > strong {
   gap: 0.8rem;
 }
 
-.section-title {
+.main-title {
   font-family: "Quicksand", sans-serif;
   text-transform: uppercase;
   font-size: 2rem;
@@ -620,6 +637,14 @@ h2 > strong {
   color: #3a3a3a;
   transition: 1s all ease-in-out;
   opacity: 0;
+}
+
+.section-title {
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #3a3a3a;
 }
 
 .contact-title {
@@ -843,7 +868,7 @@ h2 > strong {
 }
 
 @media screen and (min-width: 800px) {
-    .section-title {
+    .main-title {
       font-size: 3rem;
       line-height: 3.5rem;
     }
