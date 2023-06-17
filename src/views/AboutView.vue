@@ -767,6 +767,11 @@ h2 > strong {
     bottom: 100px;
     align-items: flex-start;
   }
+
+  .section__content.renato > .section__text {
+    justify-content: center;
+    margin-bottom: 8rem;
+  }
   
   .section__content.pamela .competencies {
     left: -270px;
