@@ -159,11 +159,11 @@
             <h3 class="subtitle">Endereço</h3>
             <p class="location">
               <strong
-                >Rua: Geraldo Claudino dos Santos N° 171,
-                Bairro: Gaspar Grande
-                Cidade: Gaspar
-                CEP: 89111-288,
-                País: Brasil
+                >Geraldo Claudino dos Santos N° 171,
+                Gaspar Grande,
+                Gaspar,
+                89111-288,
+                Brasil
               </strong
               >
             </p>
