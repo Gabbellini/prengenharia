@@ -160,8 +160,10 @@
             <h3 class="subtitle">Endereço</h3>
             <p class="location">
               <strong
-                >Fênix, 37, Gasparinho
-                Gaspar, Brasil</strong
+                >Rua: Geraldo Claudino dos Santos N° 171,
+                Bairro: Gaspar Grande
+                Cidade: Gaspar
+                CEP: 89111-288</strong
               >
             </p>
           </div>
