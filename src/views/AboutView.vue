@@ -43,25 +43,6 @@
     </section>
 
     <section class="section">
-      <div class="section__content">
-        <div v-scroll-animate="'slide-from-left'" class="section__image">
-          <img
-            src="../assets/static/about/renato_pamela.jpg"
-            alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
-          />
-        </div>
-        <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="section-title">TUDO COMEÇOU QUANDO...</h2>
-          <p class="main-text">A história da PR Engenharia é marcada pelo engenheiro civil Renato Dias Galles, um verdadeiro apaixonado pela construção civil.</p> 
-          <p class="main-text">Desde o início de sua carreira, sempre se destacou por sua visão inovadora e seu comprometimento com a qualidade e a excelência em cada projeto. Com anos de experiência e conhecimento em todas as etapas da construção, desde o projeto até o gerenciamento da obra, a PR Engenharia oferece um serviço de excelência, sempre pautado na segurança e responsabilidade.</p> 
-          <p class="main-text">Em cada projeto, a PR Engenharia busca oferecer soluções que atendam às necessidades de seus clientes, sempre com foco na segurança e valorização dos imóveis. Tudo isso aliado à busca constante por resultados que garantam a satisfação de todos os envolvidos.</p>
-          <p class="main-text">Uma das grandes responsáveis pelo sucesso da PR Engenharia é a projetista Pamela Galles, que traz consigo anos de experiência e conhecimento em projetos de engenharia. Com sua criatividade e habilidade técnica, com um olhar apurado para os detalhes e uma habilidade única em transformar ideias em realidade, suas ideias inovadoras e seu compromisso com a qualidade têm sido a base para muitos projetos bem-sucedidos, o que resultou em um crescente número de clientes satisfeitos e um forte reconhecimento no mercado.</p>
-          <p class="main-text">Se você procura uma empresa de engenharia comprometida com a excelência, a PR Engenharia é a escolha certa. Com uma equipe altamente qualificada, tecnologia de ponta e anos de experiência no mercado, a empresa oferece soluções completas e personalizadas para cada projeto, sempre com o compromisso de entregar o melhor resultado. Venha conhecer a PR Engenharia e descubra como podemos transformar seus sonhos em realidade!</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
       <div class="section__content renato">
         <div v-scroll-animate="'slide-from-left'" class="section__image">
           <img
