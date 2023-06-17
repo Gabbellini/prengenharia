@@ -144,8 +144,7 @@
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="contact-title">Entre em <br /><strong class="section-title">contato</strong></h2>
           <p class="dark-text">
-            Quer realizar seu próximo projeto? Preencha o formulário ao lado ou
-            entre em contato através dos canais abaixo.
+            Quer realizar seu próximo projeto? Entre em contato através dos canais abaixo.
           </p>
           <div class="contact telephone">
             <h3 class="subtitle">Telefones</h3>
@@ -163,7 +162,9 @@
                 >Rua: Geraldo Claudino dos Santos N° 171,
                 Bairro: Gaspar Grande
                 Cidade: Gaspar
-                CEP: 89111-288</strong
+                CEP: 89111-288,
+                País: Brasil
+              </strong
               >
             </p>
           </div>
