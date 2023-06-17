@@ -8,6 +8,15 @@
       <nav :class="isMenuOpen ? 'open' : 'close'">
         <ul>
           <li class="nav__item">
+            <a href="#mission">Missão</a>
+          </li>
+          <li class="nav__item">
+            <a href="#vision">Visão</a>
+          </li>
+          <li class="nav__item">
+            <a href="#values">Valores</a>
+          </li>
+          <li class="nav__item">
             <router-link :to="{name: 'about'}">Sobre</router-link>
           </li>
         </ul>

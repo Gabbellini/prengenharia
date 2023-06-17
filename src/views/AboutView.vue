@@ -9,20 +9,20 @@
       <div class="section__content">
         <div class="section__text">
           <div class="section-title-container">
-            <h2 v-scroll-animate="'fade-in-1s'" class="main-title">Por trás da</h2>
+            <h2 v-scroll-animate="'fade-in-1s'" class="main-title">Construímos <strong>sonhos</strong> e transformamos</h2>
             <h2 v-scroll-animate="'fade-in-2s'" class="main-title">
-              PR ENGENHARIA, existem
+               ideias em <strong>realidade</strong>, com expertise, 
             </h2>
             <h2 v-scroll-animate="'fade-in-3s'" class="main-title">
-              <strong>grandes profissionais</strong>
+              inovação e excelência em cada projeto
             </h2>
           </div>
            
-          <h2 v-show="false" class="section-title">
+          <!-- <h2 v-show="false" class="section-title">
             Construímos <br />
             <strong>sonhos</strong> e transformamos ideias em
             <strong>realidade</strong>, com expertise, inovação e excelência em cada projeto.
-          </h2>
+          </h2> -->
           <p v-scroll-animate="'fade-in'" class="main-text">
             Se você procura uma empresa de engenharia comprometida com a excelência, a PR Engenharia é a escolha certa.
           </p>
@@ -131,7 +131,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section id="mission" class="section">
       <div class="section__content missao">
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="section-title">NOSSA MISSÃO</h2>
@@ -142,7 +142,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section id="vision" class="section">
       <div class="section__content missao">
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="section-title">NOSSA VISÃO</h2>
@@ -153,7 +153,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section id="values" class="section">
       <div class="section__content missao">
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="section-title">NOSSOS VALORES</h2>
@@ -885,7 +885,7 @@ h2 > strong {
 
 @media screen and (min-width: 800px) {
     .main-title {
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 3.5rem;
     }
 }
