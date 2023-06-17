@@ -8,6 +8,9 @@
       <nav :class="isMenuOpen ? 'open' : 'close'">
         <ul>
           <li class="nav__item">
+            <router-link :to="{name: 'about'}">Sobre</router-link>
+          </li>
+          <li class="nav__item">
             <a href="#mission">Missão</a>
           </li>
           <li class="nav__item">
@@ -15,9 +18,6 @@
           </li>
           <li class="nav__item">
             <a href="#values">Valores</a>
-          </li>
-          <li class="nav__item">
-            <router-link :to="{name: 'about'}">Sobre</router-link>
           </li>
         </ul>
       </nav>
@@ -92,7 +92,7 @@ nav > ul {
 }
 
 .nav__item > a {
-  box-sizing: border-box;
+    box-sizing: border-box;
   padding: 1rem;
 
   font-family: 'Montserrat', sans-serif;
@@ -102,6 +102,13 @@ nav > ul {
   text-decoration: none;
 
   color: #000;
+}
+
+.nav__item:hover > a {
+    border-bottom: 0.20rem solid #373f41;
+}
+
+.nav__item:first-of-type > a {
   border-bottom: 0.20rem solid #373f41;
 }
 
