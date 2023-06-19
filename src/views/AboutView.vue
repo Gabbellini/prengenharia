@@ -1,6 +1,6 @@
 <template>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=554797342592&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="whatsapp-float-button" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5547984822911&text=Olá%21%20gostaria%20de%20ajuda." class="whatsapp-float-button" target="_blank">
     <i class="fa fa-whatsapp whatsapp-icon"></i>
   </a>
   <div class="about-view">
@@ -17,12 +17,6 @@
               inovação e excelência em cada projeto
             </h2>
           </div>
-           
-          <!-- <h2 v-show="false" class="section-title">
-            Construímos <br />
-            <strong>sonhos</strong> e transformamos ideias em
-            <strong>realidade</strong>, com expertise, inovação e excelência em cada projeto.
-          </h2> -->
           <p v-scroll-animate="'fade-in'" class="main-text">
             Se você procura uma empresa de engenharia comprometida com a excelência, a PR Engenharia é a escolha certa.
           </p>
@@ -38,25 +32,6 @@
             src="../assets/static/about/renato_pamela.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
           />
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section__content">
-        <div v-scroll-animate="'slide-from-left'" class="section__image">
-          <img
-            src="../assets/static/about/renato_pamela.jpg"
-            alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
-          />
-        </div>
-        <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="section-title">TUDO COMEÇOU QUANDO...</h2>
-          <p class="main-text">A história da PR Engenharia é marcada pelo engenheiro civil Renato Dias Galles, um verdadeiro apaixonado pela construção civil.</p> 
-          <p class="main-text">Desde o início de sua carreira, sempre se destacou por sua visão inovadora e seu comprometimento com a qualidade e a excelência em cada projeto. Com anos de experiência e conhecimento em todas as etapas da construção, desde o projeto até o gerenciamento da obra, a PR Engenharia oferece um serviço de excelência, sempre pautado na segurança e responsabilidade.</p> 
-          <p class="main-text">Em cada projeto, a PR Engenharia busca oferecer soluções que atendam às necessidades de seus clientes, sempre com foco na segurança e valorização dos imóveis. Tudo isso aliado à busca constante por resultados que garantam a satisfação de todos os envolvidos.</p>
-          <p class="main-text">Uma das grandes responsáveis pelo sucesso da PR Engenharia é a projetista Pamela Galles, que traz consigo anos de experiência e conhecimento em projetos de engenharia. Com sua criatividade e habilidade técnica, com um olhar apurado para os detalhes e uma habilidade única em transformar ideias em realidade, suas ideias inovadoras e seu compromisso com a qualidade têm sido a base para muitos projetos bem-sucedidos, o que resultou em um crescente número de clientes satisfeitos e um forte reconhecimento no mercado.</p>
-          <p class="main-text">Se você procura uma empresa de engenharia comprometida com a excelência, a PR Engenharia é a escolha certa. Com uma equipe altamente qualificada, tecnologia de ponta e anos de experiência no mercado, a empresa oferece soluções completas e personalizadas para cada projeto, sempre com o compromisso de entregar o melhor resultado. Venha conhecer a PR Engenharia e descubra como podemos transformar seus sonhos em realidade!</p>
         </div>
       </div>
     </section>
@@ -114,15 +89,16 @@
     
     <section class="section">
       <div class="section__content quote">
-        <div v-scroll-animate="'slide-from-left'" class="section__image">
+        <div v-scroll-animate="'slide-from-left'" class="section__image section__image--project">
           <img
-            src="../assets/static/about/renato_pamela.jpg"
+            src="../assets/static/about/project.jpg"
             alt="imagem do casal Pamela (Arquiteta) e Renato (Engenheiro)"
           />
         </div>
         <div v-scroll-animate="'fade-in'" class="section__text">
-          <p class="dark-text">
-            "O amor e a dedicação que temos em nosso trabalho refletem no retorno e na satisfação dos nossos clientes, o que nos faz acreditar que estamos no caminho certo."
+          <p class="main-text">
+            <strong>Você já imaginou ter um espaço que une conforto, elegância ?</strong><br><br>
+            O projeto inovador da PR Engenharia vai transformar seu sonho em realidade. Com design arrojado e materiais de alta qualidade, nossa equipe  talentosa vai criar um ambiente que supera todas as suas expectativas. . Não perca essa oportunidade única de ter um projeto exclusivo e personalizado. Conte conosco para construir o seu espaço dos sonhos. Junte-se à PR Engenharia e descubra o poder da excelência em engenharia e design.
           </p>
         </div>
       </div>
@@ -168,199 +144,30 @@
         <div v-scroll-animate="'fade-in'" class="section__text">
           <h2 class="contact-title">Entre em <br /><strong class="section-title">contato</strong></h2>
           <p class="dark-text">
-            Quer realizar seu próximo projeto? Preencha o formulário ao lado ou
-            entre em contato através dos canais abaixo.
+            Quer realizar seu próximo projeto? Entre em contato através dos canais abaixo.
           </p>
           <div class="contact telephone">
             <h3 class="subtitle">Telefones</h3>
-            <a class="link" href="tel:5548988337474">+55 48 98833-7474</a>
-            <a class="link" href="tel:5548996189628">+55 48 99618-9628</a>
+            <a class="link" href="tel:5547984822911">+55 47 8482-2911</a>
+            <a class="link" href="tel:5547984392757">+55 47 98439-2757</a>
           </div>
           <div class="contact email">
             <h3 class="subtitle">E-mail</h3>
-            <a class="link" href="mailto:contato@toddo.arq.br">contato@toddo.arq.br</a>
+            <a class="link" href="mailto:prengenharia@outlook.com.br">prengenharia@outlook.com.br</a>
           </div>
           <div class="contact location">
             <h3 class="subtitle">Endereço</h3>
             <p class="location">
               <strong
-                >Ed. Blue Diamond Rua Idalina Pereira dos Santos, 67, sala 904
-                Agronômica Florianópolis, Brasil</strong
+                >Geraldo Claudino dos Santos N° 171,
+                Gaspar Grande,
+                Gaspar,
+                89111-288,
+                Brasil
+              </strong
               >
             </p>
           </div>
-        </div>
-        <div v-show="false" class="section__image">
-          <form  class="elementor-form" method="post" name="Orçamento">
-            <div class="elementor-form-fields-wrapper elementor-labels-above">
-              <div class="">
-                <label for="form-field-email" class="elementor-field-label">
-                  Nome
-                </label>
-                <input
-                  size="1"
-                  type="text"
-                  name="form_fields[email]"
-                  id="form-field-email"
-                  class="elementor-field elementor-size-sm elementor-field-textual"
-                  placeholder="Digite seu nome"
-                  required="required"
-                  aria-required="true"
-                />
-              </div>
-              <div
-                class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-field_3e08a01 elementor-col-100 elementor-field-required"
-              >
-                <label
-                  for="form-field-field_3e08a01"
-                  class="elementor-field-label"
-                >
-                  E-mail
-                </label>
-                <input
-                  size="1"
-                  type="email"
-                  name="form_fields[field_3e08a01]"
-                  id="form-field-field_3e08a01"
-                  class="elementor-field elementor-size-sm elementor-field-textual"
-                  placeholder="Digite o seu melhor e-mail"
-                  required="required"
-                  aria-required="true"
-                />
-              </div>
-              <div
-                class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_63907b2 elementor-col-100 elementor-field-required"
-              >
-                <label
-                  for="form-field-field_63907b2"
-                  class="elementor-field-label"
-                >
-                  Telefone
-                </label>
-                <input
-                  size="1"
-                  type="tel"
-                  name="form_fields[field_63907b2]"
-                  id="form-field-field_63907b2"
-                  class="elementor-field elementor-size-sm elementor-field-textual"
-                  placeholder="Digite seu telefone"
-                  required="required"
-                  aria-required="true"
-                  pattern="[0-9()#&amp;+*-=.]+"
-                  title="Only numbers and phone characters (#, -, *, etc) are accepted."
-                />
-              </div>
-              <div
-                class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-estado elementor-col-50"
-              >
-                <label for="form-field-estado" class="elementor-field-label">
-                  Estado
-                </label>
-                <div
-                  class="elementor-field elementor-select-wrapper remove-before"
-                >
-                  <div class="select-caret-down-wrapper">
-                    <i aria-hidden="true" class="eicon-caret-down"></i>
-                  </div>
-                  <select
-                    name="form_fields[estado]"
-                    id="form-field-estado"
-                    class="elementor-field-textual elementor-size-sm"
-                  >
-                    <option value="">Selecione um estado</option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="PR">Paraná</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                  </select>
-                </div>
-              </div>
-              <div
-                class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-cidade elementor-col-50"
-              >
-                <label for="form-field-cidade" class="elementor-field-label">
-                  Cidade
-                </label>
-                <div
-                  class="elementor-field elementor-select-wrapper remove-before"
-                >
-                  <div class="select-caret-down-wrapper">
-                    <i aria-hidden="true" class="eicon-caret-down"></i>
-                  </div>
-                  <select
-                    name="form_fields[cidade]"
-                    id="form-field-cidade"
-                    class="elementor-field-textual elementor-size-sm"
-                  >
-                    <option value="">Selecione uma cidade</option>
-                    <option value=""></option>
-                  </select>
-                </div>
-              </div>
-              <div
-                class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-assunto elementor-col-100"
-              >
-                <label for="form-field-assunto" class="elementor-field-label">
-                  Assunto
-                </label>
-                <input
-                  size="1"
-                  type="text"
-                  name="form_fields[assunto]"
-                  id="form-field-assunto"
-                  class="elementor-field elementor-size-sm elementor-field-textual"
-                  placeholder="Digite o assunto"
-                />
-              </div>
-              <div
-                class="elementor-field-type-textarea elementor-field-group elementor-column elementor-field-group-menssagem elementor-col-100"
-              >
-                <label for="form-field-menssagem" class="elementor-field-label">
-                  Mensagem
-                </label>
-                <textarea
-                  class="elementor-field-textual elementor-field elementor-size-sm"
-                  name="form_fields[menssagem]"
-                  id="form-field-menssagem"
-                  rows="4"
-                  placeholder="Digite a mensagem"
-                ></textarea>
-              </div>
-              <div
-                class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons"
-              >
-                <button type="submit" class="elementor-button elementor-size-sm">
-                  <span>
-                    <span class="elementor-button-icon"> </span>
-                    <span class="elementor-button-text">Enviar</span>
-                  </span>
-                </button>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </section>
@@ -480,7 +287,7 @@ export default defineComponent({
 }
 
 .section__content.quote {
-  align-items: flex-end;
+  align-items: center;
 }
 
 .section__content.renato {
@@ -551,7 +358,7 @@ export default defineComponent({
 }
 
 .main-text {
-  color: #7a7a7a;
+  color: #525252;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
@@ -962,6 +769,11 @@ h2 > strong {
     right: -290px;
     bottom: 100px;
     align-items: flex-start;
+  }
+
+  .section__content.renato > .section__text {
+    justify-content: center;
+    margin-bottom: 8rem;
   }
   
   .section__content.pamela .competencies {
