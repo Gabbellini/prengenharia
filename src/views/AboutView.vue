@@ -96,10 +96,8 @@
           />
         </div>
         <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="main-text">
-            <strong>Você já imaginou ter um espaço que une conforto, elegância?</strong><br><br>
-            O projeto inovador da PR Engenharia vai transformar seu sonho em realidade. Com design arrojado e materiais de alta qualidade, nossa equipe  talentosa vai criar um ambiente que supera todas as suas expectativas.
-          </h2>
+          <h2 class="section-title">Você já imaginou ter um espaço que une conforto, elegância?</h2>
+          <p class="main-text">O projeto inovador da PR Engenharia vai transformar seu sonho em realidade. Com design arrojado e materiais de alta qualidade, nossa equipe  talentosa vai criar um ambiente que supera todas as suas expectativas.</p>
           <p class="main-text">
             Não perca essa oportunidade única de ter um projeto exclusivo e personalizado. Conte conosco para construir o seu espaço dos sonhos. Junte-se à PR Engenharia e descubra o poder da excelência em engenharia e design.
           </p>
@@ -198,11 +196,6 @@
               <li class="footer__link">
                 <router-link :to="{name: 'about'}">
                   Contato 
-                </router-link>
-              </li>
-              <li class="footer__link">
-                <router-link :to="{name: 'about'}">
-                  Mostras
                 </router-link>
               </li>
               <li class="footer__link">
