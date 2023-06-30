@@ -102,6 +102,7 @@ nav > ul {
   text-decoration: none;
 
   color: #000;
+  font-weight: bold;
 }
 
 .nav__item:hover > a {

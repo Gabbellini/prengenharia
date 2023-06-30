@@ -64,7 +64,7 @@
     <section class="section">
       <div class="section__content pamela">
         <div v-scroll-animate="'fade-in'" class="section__text">
-          <h2 class="section-title">PÂMELA GALLES</h2>
+          <h2 class="section-title">PAMELA GALLES</h2>
           <p class="main-text">
             Uma das grandes responsáveis pelo sucesso da PR Engenharia é a projetista Pamela Galles, que traz consigo anos de experiência e conhecimento em projetos de engenharia.
           </p>
@@ -96,9 +96,12 @@
           />
         </div>
         <div v-scroll-animate="'fade-in'" class="section__text">
+          <h2 class="main-text">
+            <strong>Você já imaginou ter um espaço que une conforto, elegância?</strong><br><br>
+            O projeto inovador da PR Engenharia vai transformar seu sonho em realidade. Com design arrojado e materiais de alta qualidade, nossa equipe  talentosa vai criar um ambiente que supera todas as suas expectativas.
+          </h2>
           <p class="main-text">
-            <strong>Você já imaginou ter um espaço que une conforto, elegância ?</strong><br><br>
-            O projeto inovador da PR Engenharia vai transformar seu sonho em realidade. Com design arrojado e materiais de alta qualidade, nossa equipe  talentosa vai criar um ambiente que supera todas as suas expectativas. . Não perca essa oportunidade única de ter um projeto exclusivo e personalizado. Conte conosco para construir o seu espaço dos sonhos. Junte-se à PR Engenharia e descubra o poder da excelência em engenharia e design.
+            Não perca essa oportunidade única de ter um projeto exclusivo e personalizado. Conte conosco para construir o seu espaço dos sonhos. Junte-se à PR Engenharia e descubra o poder da excelência em engenharia e design.
           </p>
         </div>
       </div>
@@ -318,7 +321,7 @@ export default defineComponent({
 }
 
 .competencies > li {
-  color: #8F8F8F;
+  color: black;
   font-family: "Quicksand", Sans-serif;
   font-size: 20px;
   text-transform: uppercase;
@@ -358,7 +361,7 @@ export default defineComponent({
 }
 
 .main-text {
-  color: #525252;
+  color: black;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 1.2rem;
